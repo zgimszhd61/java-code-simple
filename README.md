@@ -23,18 +23,24 @@ The following guides illustrate how to use some features concretely:
 ## 以阿里云服务器部署为例
 ### LINUX下运行
 ```
+
+yum install git maven
+
 运行-1:
 $ wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
 $ tar -xvf apache-maven-3.6.3-bin.tar.gz
 $ mv apache-maven-3.6.3 /opt/
 
-更新settings.xml源，参考 -> https://segmentfault.com/a/1190000022529672
-
+地址为：
+rm -rf /opt/apache-maven-3.6.3/conf/settings.xml
+vi /opt/apache-maven-3.6.3/conf/settings.xml
+更新settings.xml源，参考 -> https://www.cnblogs.com/sunxun001/p/17021432.html
 
 wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
 tar xf jdk-17_linux-x64_bin.tar.gz
 mv jdk-17.0.7/ /usr/lib/jvm
 
+vi /etc/profile
 #set java environment(保存下面信息到/etc/profile末尾)
 export M2_HOME='/opt/apache-maven-3.6.3'
 export JAVA_HOME=/usr/lib/jvm/jdk-17.0.7
@@ -44,6 +50,9 @@ export PATH=$M2_HOME/bin:$JAVA_HOME/bin:$PATH
 source /etc/profile
 
 
+
+git clone https://github.com/zgimszhd61/java-code-simple.git
+cd java-code-simple
 
 运行-3:
 mvn install
