@@ -28,26 +28,24 @@ $ wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apach
 $ tar -xvf apache-maven-3.6.3-bin.tar.gz
 $ mv apache-maven-3.6.3 /opt/
 
-Step 2: Setting M2_HOME and Path Variables
-Add the following lines to the user profile file (.profile).
-
-运行-2:
-M2_HOME='/opt/apache-maven-3.6.3'
-PATH="$M2_HOME/bin:$PATH"
-export PATH
-
-Relaunch the terminal or execute source .profile to apply the changes.
-
 更新settings.xml源，参考 -> https://segmentfault.com/a/1190000022529672
 
-mvn versions:display-dependency-updates
 
 wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
 tar xf jdk-17_linux-x64_bin.tar.gz
-mv jdk-17.0.3/ /usr/lib/jvm
+mv jdk-17.0.7/ /usr/lib/jvm
+
+#set java environment(保存下面信息到/etc/profile末尾)
+export M2_HOME='/opt/apache-maven-3.6.3'
+export JAVA_HOME=/usr/lib/jvm/jdk-17.0.7
+export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib
+export PATH=$M2_HOME/bin:$JAVA_HOME/bin:$PATH
+
+source /etc/profile
+
+
 
 运行-3:
-mvn -N io.takari:maven:wrapper
 mvn install
 mvn package
 
