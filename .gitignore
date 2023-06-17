@@ -17,6 +17,7 @@ target/
 .gitignore
 mvnw.cmd
 mvnw
+.idea/
 
 # Package Files #
 *.jar
