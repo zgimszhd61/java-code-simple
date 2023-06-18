@@ -1,10 +1,9 @@
 ## 以阿里云服务器部署为例
 ### LINUX下运行
 ```
+## 下载基本环境和依赖:
 
-yum install git maven
-
-运行-1:
+yum install git maven -y
 wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
 tar -xvf apache-maven-3.6.3-bin.tar.gz
 mv apache-maven-3.6.3 /opt/
@@ -27,11 +26,11 @@ export PATH=$M2_HOME/bin:$JAVA_HOME/bin:$PATH
 
 source /etc/profile
 
-## 下载
+## 下载文件包
 git clone https://github.com/zgimszhd61/java-code-simple.git
 cd java-code-simple
 
-## 运行:
+## 试编译运行:
 mvn install
 mvn package
 
@@ -39,6 +38,7 @@ mvn package
 
 ### USAGE
 ```
+
 mvn spring-boot:run
 
 ```
@@ -52,7 +52,7 @@ mvn spring-boot:run
 ```
 
 ### settings.xml
-```agsl
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -91,4 +91,13 @@ mvn spring-boot:run
     </mirror>
    </mirrors>
 </settings>
+```
+
+## 如果80或8080端口被占用
+```
+
+运行 lsof -i:8080 ， 得到PID进程号
+kill -9 PID进程号 ，杀掉进程
+然后重新运行
+
 ```
