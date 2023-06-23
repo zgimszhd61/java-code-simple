@@ -106,3 +106,24 @@ kill -9 PID进程号 ，杀掉进程
 然后重新运行
 
 ```
+
+## 攻击验证API
+```agsl
+###
+GET http://localhost:80/api/xss/bad?name=<script>alert(1)</script>
+
+###
+GET http://localhost:80/api/ssrf/bad?url=http://localhost:80/api/xss/bad?name=<script>alert(1)</script>
+
+###
+GET http://localhost:80/api/rce/bad02?cmd=ls
+```
+
+## 应用场景
+- 安全教学.
+- 安全防护产品测试.
+- 代码审计.
+
+
+## 更新日志
+- 2023-06: 项目初始化，创建ssrf、rce、xss、Helloworld健康检查接口.创建README教程.

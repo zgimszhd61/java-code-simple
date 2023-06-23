@@ -1,0 +1,8 @@
+###
+GET http://localhost:80/api/xss/bad?name=<script>alert(1)</script>
+
+###
+GET http://localhost:80/api/ssrf/bad?url=http://localhost:80/api/xss/bad?name=<script>alert(1)</script>
+
+###
+GET http://localhost:80/api/rce/bad02?cmd=ls
