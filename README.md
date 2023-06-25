@@ -110,6 +110,7 @@ kill -9 PID进程号 ，杀掉进程
 
 ## 攻击验证API
 ```agsl
+
 ###
 GET http://localhost:80/api/xss/bad?name=<script>alert(1)</script>
 
@@ -121,6 +122,13 @@ GET http://localhost:80/api/rce/bad02?cmd=ls
 
 ###
 GET http://localhost:80/api/xxe/bad01?xml=<!DOCTYPE doc [<!ENTITY xxe SYSTEM \"http://127.0.0.1:1664\">]><doc>&xxe;</doc>
+
+###
+GET http://localhost:80/api/jsonp/bad01?callback=<script>alert(1)</script>
+
+###
+GET http://localhost:80/api/spel/bad01?cmd=vulnhere
+
 
 ```
 
