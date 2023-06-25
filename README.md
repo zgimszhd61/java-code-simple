@@ -1,5 +1,6 @@
 ## 项目介绍
 - 一个SpringBoot的脚手架，按照教程走下去直接部署到可运行状态.
+- A SpringBoot scaffolding for security education purposes.
 
 ## 以阿里云服务器部署为例
 - 按照下面教程部署，总共重新用时10分钟.
@@ -117,6 +118,10 @@ GET http://localhost:80/api/ssrf/bad?url=http://localhost:80/api/xss/bad?name=<s
 
 ###
 GET http://localhost:80/api/rce/bad02?cmd=ls
+
+###
+GET http://localhost:80/api/xxe/bad01?xml=<!DOCTYPE doc [<!ENTITY xxe SYSTEM \"http://127.0.0.1:1664\">]><doc>&xxe;</doc>
+
 ```
 
 ## 应用场景
