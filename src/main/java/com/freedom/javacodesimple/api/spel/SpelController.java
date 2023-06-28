@@ -12,7 +12,7 @@ import java.io.IOException;
 @RequestMapping("/api")
 public class SpelController {
     @GetMapping("/spel/bad01")
-    public String rce01(String cmd) throws IOException {
+    public String rce01(String cmd) {
         SpelExpressionParser spelExpressionParser = new SpelExpressionParser();
         Expression expression = spelExpressionParser.parseExpression(cmd);
         String out = (String) expression.getValue();
