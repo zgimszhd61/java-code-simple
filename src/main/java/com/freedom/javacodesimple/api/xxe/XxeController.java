@@ -22,8 +22,8 @@ public class XxeController {
     //攻击Payload:"<!DOCTYPE doc [ \n" +
     //                    "<!ENTITY xxe SYSTEM \"http://127.0.0.1:1664\">\n" +
     //                    "]><doc>&xxe;</doc>"
-    @GetMapping("/xxe/bad01")
 
+    @GetMapping("/xxe/bad01")
     public String xxe01(String xmlContent) throws IOException, ParserConfigurationException, SAXException {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();

