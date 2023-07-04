@@ -140,4 +140,5 @@ GET http://localhost:80/api/spel/bad01?cmd=vulnhere
 
 ## 更新日志
 - 2023-06: 项目初始化，创建ssrf、rce、xss、Helloworld健康检查接口.创建README教程.
-- 2023-07: 增加反序列化，增加Ognl;增加bsh,groovy,mvel,processbuilder;
+- 2023-07-01: 增加反序列化，增加Ognl;
+- 2023-07-04: 增加bsh,groovy,mvel,processbuilder,redos,jndi；
