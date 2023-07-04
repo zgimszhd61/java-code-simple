@@ -1,10 +1,9 @@
-package com.freedom.javacodesimple.api.ScriptEngine;
+package com.freedom.javacodesimple.api.scriptEngine;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.xml.sax.SAXException;
-import org.yaml.snakeyaml.Yaml;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

@@ -1,4 +1,4 @@
-package com.freedom.javacodesimple.api.Cors;
+package com.freedom.javacodesimple.api.cors;
 
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.GetMapping;
