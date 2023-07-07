@@ -1,8 +1,6 @@
-package com.freedom.javacodesimple.api.PathTravelsal;
+package com.freedom.javacodesimple.api.pathTravelsal;
 
 
-import jakarta.servlet.http.HttpServletRequest;
-import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
