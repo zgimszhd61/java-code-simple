@@ -143,3 +143,13 @@ GET http://localhost:80/api/spel/bad01?cmd=vulnhere
 - 2023-06: 项目初始化，创建ssrf、rce、xss、Helloworld健康检查接口.创建README教程.
 - 2023-07-01: 增加反序列化，增加Ognl;
 - 2023-07-04: 增加bsh,groovy,mvel,processbuilder,redos,jndi；
+
+## 如何加入共建
+- 联系wx:7908300 ，领取任务.
+- 或者直接本项目提出issue.
+
+## 其他同类项目
+- https://github.com/snoopysecurity/Vulnerable-Code-Snippets
+- https://github.com/JoyChou93/java-sec-code
+- https://github.com/j3ers3/Hello-Java-Sec
+- https://github.com/github/codeql
