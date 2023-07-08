@@ -17,6 +17,7 @@ wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
 tar xf jdk-17_linux-x64_bin.tar.gz
 mv jdk-17.0.7/ /usr/lib/jvm
 
+
 ## 更新配置
 
 rm -rf /opt/apache-maven-3.6.3/conf/settings.xml
