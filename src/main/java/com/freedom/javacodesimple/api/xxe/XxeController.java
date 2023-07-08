@@ -1,17 +1,17 @@
 package com.freedom.javacodesimple.api.xxe;
 
+import org.jdom2.input.sax.SAXHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.*;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
 
 @RestController
 @RequestMapping("/api")
@@ -31,4 +31,15 @@ public class XxeController {
         Document doc = db.parse(is);
         return "success";
     }
+
+    @GetMapping("/xxe/bad03")
+    public String xxe03(String xmlContent) throws IOException, ParserConfigurationException, SAXException {
+        SAXParserFactory factory  = SAXParserFactory.newInstance();
+        SAXParser saxparser = factory.newSAXParser();
+        SAXHandler handler = new SAXHandler();
+        saxparser.parse(xmlContent, handler);
+        return "success";
+    }
+
+
 }

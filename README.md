@@ -1,6 +1,8 @@
 ## 项目介绍
 - 一个SpringBoot的脚手架，按照教程走下去直接部署到可运行状态.
 - A SpringBoot scaffolding for security education purposes.
+- 目标：
+  - 一站式安全能力评估。
 
 ## 以阿里云服务器部署为例
 - 按照下面教程部署，总共重新用时10分钟.
@@ -134,9 +136,14 @@ GET http://localhost:80/api/spel/bad01?cmd=vulnhere
 ```
 
 ## 应用场景
-- 安全教学.
 - 安全防护产品测试.
-- 代码审计.
+  - IDE插件能力测试.
+  - WAF能力测试.
+  - 白盒扫描能力测试.
+  - 黑盒扫描能力测试.
+  - IAST扫描能力测试.
+  - 供应链安全产品能力测试.
+- 人工代码审计学习.
 
 
 ## 更新日志
@@ -144,12 +151,16 @@ GET http://localhost:80/api/spel/bad01?cmd=vulnhere
 - 2023-07-01: 增加反序列化，增加Ognl;
 - 2023-07-04: 增加bsh,groovy,mvel,processbuilder,redos,jndi；
 
+
 ## 如何加入共建
 - 联系wx:7908300 ，领取任务.
 - 或者直接本项目提出issue.
+
 
 ## 其他同类项目
 - https://github.com/snoopysecurity/Vulnerable-Code-Snippets
 - https://github.com/JoyChou93/java-sec-code
 - https://github.com/j3ers3/Hello-Java-Sec
 - https://github.com/github/codeql
+- https://github.com/proudwind/javasec_study
+- https://github.com/threedr3am/learnjavabug
