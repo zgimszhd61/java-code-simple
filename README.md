@@ -2,7 +2,7 @@
 - 一个SpringBoot的脚手架，按照教程走下去直接部署到可运行状态.
 - A SpringBoot scaffolding for security education purposes.
 - 目标：
-  - 一站式安全能力评估。
+  - 一站式安全能力评估.
 
 ## 以阿里云服务器部署为例
 - 按照下面教程部署，总共重新用时10分钟.

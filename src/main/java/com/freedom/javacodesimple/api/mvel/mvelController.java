@@ -1,4 +1,7 @@
+用中文问答，分析下面java代码存在哪些安全风险,如何验证、确认他们
+
 package com.freedom.javacodesimple.api.mvel;
+
 
 import cn.hutool.extra.expression.engine.mvel.MvelEngine;
 import ognl.Ognl;
