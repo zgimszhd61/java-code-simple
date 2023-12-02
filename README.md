@@ -156,6 +156,14 @@ GET http://localhost:80/api/spel/bad01?cmd=vulnhere
 - 联系wx:7908300 ，领取任务.
 - 或者直接本项目提出issue.
 
+## 下一步计划
+[] 异常报错回显到页面.
+[] 短信验证码无频率控制.
+[] 账号之中邮箱和手机号信息可通过1+1+1枚举.
+[] 开源许可证违规风险还原.
+[] 常用高Star供应链CVE漏洞还原.
+[] 不安全的加密算法（如静态盐salt).
+[] 创建其他分支:AndroidApp常见漏洞benchmark,pythonApp常见漏洞benchmark,BunApp常见漏洞benchmark,IosApp常见漏洞Benchmark，并提供索引.
 
 ## 其他同类项目
 - https://github.com/snoopysecurity/Vulnerable-Code-Snippets
