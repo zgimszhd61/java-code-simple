@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>ognl</groupId>
 			<artifactId>ognl</artifactId>
-			<version>3.0.21</version>
+			<version>3.4.0</version>
 		</dependency>
 
 
